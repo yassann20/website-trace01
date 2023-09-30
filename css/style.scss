@@ -1,7 +1,22 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
 
-    h2,
-    a {
+    h2{
+        font-size: 16px;
+        font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+        color: #333;
+    }
+    h3{
+        font-size: 18px;
+        font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+        color: #333;
+    }
+    a{
+        font-size: 14px;
+        font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+        color: #333;
+    }
+    p{
+        font-size: 14px;
         font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
         color: #333;
     }
@@ -28,10 +43,8 @@
 
     header {
         width: 100%;
-
         div.head-logo-area {
-            height: 70px;
-
+            padding: 20px;
             img {}
         }
 
@@ -74,7 +87,7 @@
             padding: 40px 0 0;
 
             article {
-                max-width: 373px;
+                max-width: 32%;
                 height: auto;
 
                 img {
@@ -92,11 +105,9 @@
         section.main-content {
             display: flex;
             flex-wrap: wrap;
-            width: 760px;
+            width: 65%;
 
             article {
-                display: flex;
-                flex-wrap: wrap;
                 padding: 80px 0 0 0;
 
                 h2 {
@@ -108,20 +119,20 @@
                 ul {
                     display: flex;
                     flex-wrap: nowrap;
-
+                    margin-bottom: 10px;
                     li {
-                        padding: 0 25px 13px 0;
+                        margin-right: 20px;
                     }
                 }
 
                 img {
                     display: block;
                     width: 100%;
-                    height: 428px;
+                    height: auto;
                 }
 
                 p {
-                    padding: 20px 40px 35px;
+                    padding: 10px 40px 30px 40px;
                 }
 
                 a {}
@@ -129,8 +140,8 @@
         }
 
         section.side-content {
-            width: 346px;
-
+            width: 32%;
+            padding: 20px;
             div.profile {
                 display: flex;
                 flex-wrap: wrap;
@@ -153,26 +164,45 @@
                 p {
                     padding: 0 5px;
                 }
+            }
 
-                div {
+            div {
+                width: 100%;
+
+                h2 {
                     width: 100%;
-                    h2{
+                    text-align: center;
+                    margin: 40px 0;
+                }
+
+                article {
+                    a {
+                        display: block;
                         width: 100%;
-                        text-align: center;
-                        margin: 40px 0;
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        p {
+                            width: 100%;
+                            margin: 10px 0 35px;
+                        }
                     }
-                    article {
+                }
+
+                ul {
+                    li {
                         a {
-                            img {}
-
-                            p {}
+                            display: block;
+                            border-top: solid 1px #777;
+                            text-align: left;
+                            padding: 20px;
                         }
-                    }
-
-                    ul {
-                        li {
-                            a {}
-                        }
+                        &:last-of-type{
+                                border-bottom: solid 1px #777;
+                            }
                     }
                 }
             }
@@ -180,18 +210,71 @@
     }
 
     footer {
-        div {
-            h2 {}
+        width: 100%;
+        background-color: #f7f7f7;
 
-            p {}
-
-            ul {
-                li {
-                    a {}
+        .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 0 50px;
+            margin: 0 auto;
+            div.about {
+                width: 30%;
+                height: auto;
+                h3 {
+                    padding: 0 0 20px 0;
                 }
+
+                p {
+                    padding: 20px 0;
+                }
+
+                ul {
+                    display: block;
+                    li {
+                        a {}
+                    }
+                }
+            }
+
+            div.menu {
+                width: 30%;
+
+                h3 {
+                    padding: 0 0 35px 0;
+                }
+
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            height: 50px;
+                            line-height: 50px;
+                            border-top: solid 1px;
+                            text-align: left;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+
+            div.Twitter {
+                width: 30%;
+
+                h3 {
+                    padding: 0 0 35px 0;
+                }
+
+                p {}
             }
         }
 
-        p {}
+        p.copy{
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+        }
     }
 }

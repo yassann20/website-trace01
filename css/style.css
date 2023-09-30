@@ -1,6 +1,21 @@
-@media screen and (min-width: 1000px) {
-  h2,
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 16px;
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    color: #333;
+  }
+  h3 {
+    font-size: 18px;
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    color: #333;
+  }
   a {
+    font-size: 14px;
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    color: #333;
+  }
+  p {
+    font-size: 14px;
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
     color: #333;
   }
@@ -25,7 +40,7 @@
     width: 100%;
   }
   header div.head-logo-area {
-    height: 70px;
+    padding: 20px;
   }
   header div.head-menu-area {
     height: 40px;
@@ -60,7 +75,7 @@
     padding: 40px 0 0;
   }
   main section.top-content article {
-    max-width: 373px;
+    max-width: 32%;
     height: auto;
   }
   main section.top-content article img {
@@ -74,11 +89,9 @@
   main section.main-content {
     display: flex;
     flex-wrap: wrap;
-    width: 760px;
+    width: 65%;
   }
   main section.main-content article {
-    display: flex;
-    flex-wrap: wrap;
     padding: 80px 0 0 0;
   }
   main section.main-content article h2 {
@@ -89,20 +102,22 @@
   main section.main-content article ul {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 10px;
   }
   main section.main-content article ul li {
-    padding: 0 25px 13px 0;
+    margin-right: 20px;
   }
   main section.main-content article img {
     display: block;
     width: 100%;
-    height: 428px;
+    height: auto;
   }
   main section.main-content article p {
-    padding: 20px 40px 35px;
+    padding: 10px 40px 30px 40px;
   }
   main section.side-content {
-    width: 346px;
+    width: 32%;
+    padding: 20px;
   }
   main section.side-content div.profile {
     display: flex;
@@ -124,12 +139,84 @@
   main section.side-content div.profile p {
     padding: 0 5px;
   }
-  main section.side-content div.profile div {
+  main section.side-content div {
     width: 100%;
   }
-  main section.side-content div.profile div h2 {
+  main section.side-content div h2 {
     width: 100%;
     text-align: center;
     margin: 40px 0;
+  }
+  main section.side-content div article a {
+    display: block;
+    width: 100%;
+  }
+  main section.side-content div article a img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  main section.side-content div article a p {
+    width: 100%;
+    margin: 10px 0 35px;
+  }
+  main section.side-content div ul li a {
+    display: block;
+    border-top: solid 1px #777;
+    text-align: left;
+    padding: 20px;
+  }
+  main section.side-content div ul li:last-of-type {
+    border-bottom: solid 1px #777;
+  }
+  footer {
+    width: 100%;
+    background-color: #f7f7f7;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0 50px;
+    margin: 0 auto;
+  }
+  footer .footer-content div.about {
+    width: 30%;
+    height: auto;
+  }
+  footer .footer-content div.about h3 {
+    padding: 0 0 20px 0;
+  }
+  footer .footer-content div.about p {
+    padding: 20px 0;
+  }
+  footer .footer-content div.about ul {
+    display: block;
+  }
+  footer .footer-content div.menu {
+    width: 30%;
+  }
+  footer .footer-content div.menu h3 {
+    padding: 0 0 35px 0;
+  }
+  footer .footer-content div.menu ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-top: solid 1px;
+    text-align: left;
+    padding: 0 20px;
+  }
+  footer .footer-content div.Twitter {
+    width: 30%;
+  }
+  footer .footer-content div.Twitter h3 {
+    padding: 0 0 35px 0;
+  }
+  footer p.copy {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
